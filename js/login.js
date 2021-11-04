@@ -34,7 +34,9 @@ function requestFullScreen(element) {
 }
 function changeFrameHeight(){
     var ifm= document.getElementById("iframepage");
-    ifm.height=document.documentElement.clientHeight;
+		if (ifm) {
+			ifm.height=document.documentElement.clientHeight;
+		}
 
 }
 
